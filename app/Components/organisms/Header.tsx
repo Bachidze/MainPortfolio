@@ -7,11 +7,11 @@ export default function Header() {
       <section className="cursor-pointer flex  items-center">
         <motion.div
           className="min-w-[50px] min-h-[50px] border rounded-full border-black bg-black relative"
-          animate={{ rotate: 360 }} // Continuously rotate
+          animate={{ rotate: 360 }} 
           transition={{
-            duration: 4, // Duration of one full rotation
-            ease: "linear", // Linear easing for smooth motion
-            repeat: Infinity, // Repeat the animation infinitely
+            duration: 4, 
+            ease: "linear",
+            repeat: Infinity, 
           }}
         >
           <div className="border absolute w-[65px] rotate-[45deg] top-[22px] -left-2 border-white"></div>
