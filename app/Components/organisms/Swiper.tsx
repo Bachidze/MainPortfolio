@@ -16,9 +16,12 @@ const SwiperComponent: React.FC = () => {
 
   useEffect(() => {
     const updateSlidesPerView = () => {
-      if (window.innerWidth >= 1600) {
+      if (window.innerWidth >= 1920) {
+        setSlidesPerView(4);
+      }else if(window.innerWidth >= 1600){
         setSlidesPerView(3.2);
-      } else if (window.innerWidth >= 1000) {
+      } 
+      else if (window.innerWidth >= 1000) {
         setSlidesPerView(2.7);
       } else if (window.innerWidth >= 600) {
         setSlidesPerView(2);
@@ -65,16 +68,13 @@ const SwiperComponent: React.FC = () => {
         </SwiperSlide>
         <SwiperSlide onClick={() => handleSlideClick("https://survey.reeducate.space/")}>
           
-            <div className="relative border-black cursor-pointer hover:shadow-2xl duration-300 ease-in-out min-w-[300px] h-[200px] group rounded-xl border-2   md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
+            <div className="relative border-black cursor-pointer  min-w-[300px] h-[200px]  rounded-xl border-2   md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
               <Image
                 src={Survey}
                 alt="Slide 2"
                 layout="fill"
                 objectFit="fit"
               />
-              <div className="absolute left-0 w-0 bg-black hover:w-full">
-                
-              </div>
             </div>
           
         </SwiperSlide>

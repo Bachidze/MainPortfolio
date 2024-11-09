@@ -19,7 +19,7 @@ export default function Header() {
         </motion.div>
         <div className="w-full flex relative bg-white ">
           <div className="absolute top-1/2 left-1/2 -translate-x-[30%] translate-y-[-80%] text-black">
-            EXPERIENCE
+            DISCIPLINE
           </div>
           <motion.div
             initial={{ width: 0 }}
