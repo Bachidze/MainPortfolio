@@ -1,9 +1,13 @@
 "use client";
-import React from "react";
+import React, { ReactNode } from "react";
 import { useCustomCursor } from "./CurstomCursor";
 
 
-const HoverWrapper = ({ children }:any) => {
+interface HoverWrapperProps {
+  children: ReactNode;
+}
+
+const HoverWrapper = ({ children }:HoverWrapperProps) => {
   const { onMouseEnter, onMouseLeave } = useCustomCursor();
 
   return (

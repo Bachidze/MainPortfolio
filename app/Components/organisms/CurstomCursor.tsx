@@ -1,24 +1,35 @@
-
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
+// TypeScript interface for the position state
+interface Position {
+  x: number;
+  y: number;
+}
+
+
 const CustomCursor = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [hovering, setHovering] = useState(false);
+  const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
+  const [hovering, setHovering] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleMouseMove = (e:any) => {
+   
+    const handleMouseMove = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
-    const handleHoverChange = (e:any) => setHovering(e.detail);
+
+    
+    const handleHoverChange = (e: CustomEvent<boolean>) => {
+      setHovering(e.detail); 
+    };
 
     window.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("cursorHover", handleHoverChange);
+    document.addEventListener("cursorHover", handleHoverChange as EventListener);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("cursorHover", handleHoverChange);
+      document.removeEventListener("cursorHover", handleHoverChange as EventListener);
     };
   }, []);
 
