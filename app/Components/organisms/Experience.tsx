@@ -15,9 +15,12 @@ export default function Experience() {
     
     <section className="w-[90%] m-auto relative bottom-16">
       <div className="group cursor-pointer relative">
-        <h1 className="md:text-[18px]  lg:hover:border-b lg:w-0 lg:hover:w-[6.2%] lg:border-black lg:duration-700 text-[18px] lg:text-[20px] xl:text-[]22px absolute">
+        <HoverWrapper>
+
+        <h1 className="md:text-[18px] hover:border-white  hover:text-white z-50  lg:hover:border-b lg:w-0 lg:hover:w-[6.2%] lg:border-black lg:duration-700 text-[18px] lg:text-[20px] xl:text-[]22px absolute">
           EXPERIENCE
         </h1>
+        </HoverWrapper>
       </div>
       <nav className="flex flex-col cursor-pointer pt-10 gap-3 md:gap-4 lg:pt-12 lg:gap-6">
         <div className="flex items-center gap-3">
@@ -34,7 +37,7 @@ export default function Experience() {
           <HoverWrapper>
             <li
               onClick={() => handleClick("https://www.reeducate.space/")}
-              className="lg:hover:border-b lg:w-[0%] lg:whitespace-nowrap lg:hover:w-full lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[]22px"
+              className="lg:hover:border-b lg:w-[0%] lg:hover:border-white  lg:whitespace-nowrap hover:text-white z-50 relative lg:hover:w-full lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
               >
               Re:educate 3 Month Still Work
             </li>
@@ -54,7 +57,8 @@ export default function Experience() {
           <HoverWrapper>
             <li
               onClick={() => handleClick("https://webdoors.ge/ka/")}
-              className="lg:hover:border-b lg:w-[0%] lg:whitespace-nowrap lg:hover:w-full lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[]22px"
+              className="lg:hover:border-b lg:hover:border-white lg:w-[0%] lg:whitespace-nowrap lg:hover:w-full  z-50 relative hover:text-white lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
+
               >
               Webdoors 6 Month
             </li>
@@ -62,14 +66,14 @@ export default function Experience() {
         </div>
         <div className="flex items-center gap-3">
           <HoverWrapper>
-            <div className="flex justify-center items-center w-[58px] h-[58px] relative z-40 bg-purple-600 rounded-full">
+            <div className="flex justify-center items-center w-[58px] h-[58px] relative z-20 bg-purple-600 rounded-full">
               <h2 className="text-white text-[24px]">GTU</h2>
             </div>
           </HoverWrapper>
           <HoverWrapper>
             <li
               onClick={() => handleClick("https://gtu.ge/en/")}
-              className="lg:hover:border-b lg:w-[0%] lg:whitespace-nowrap relative z-40 lg:hover:w-full lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[]22px"
+              className="lg:hover:border-b lg:w-[0%] lg:hover:border-white  lg:whitespace-nowrap hover:text-white  relative z-50 lg:hover:w-full lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
               >
               Technical Univeristy 2022-2026
             </li>
@@ -82,7 +86,7 @@ export default function Experience() {
         <div>
           <HoverWrapper>
 
-            <p className='text-black w-[95%] lg:text-[22px] tracking-wider leading-10 xl:text-[24px] 2xl:text-[26px]'>
+            <p className='text-black w-[95%] lg:text-[22px] tracking-wider relative z-50 hover:text-white duration-[1500ms] leading-10 xl:text-[24px] 2xl:text-[26px]'>
             Giorgi Bachidze, 20-year-old full-stack web developer skilled in HTML, CSS, TailwindCSS, Framer Motion, JavaScript, TypeScript, React, Next.js, Material-UI, Node, Express, and NestJS.
             </p>
           </HoverWrapper>

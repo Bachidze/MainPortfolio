@@ -22,9 +22,9 @@ export default function Header() {
           </motion.div>
         </HoverWrapper>
         <div className="w-full flex relative bg-white ">
-          <div className="absolute top-1/2 left-1/2 -translate-x-[30%] translate-y-[-80%] text-black md:text-[18px] lg:text-[20px]">
-            DISCIPLINE
-          </div>
+          {/* <div className="absolute top-1/2 left-1/2 -translate-x-[30%] translate-y-[-80%] text-black md:text-[18px] lg:text-[20px] xl:text-[22px]">
+            Giorgi Bachidze
+          </div> */}
           <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: "50%" }}

@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-// TypeScript interface for the position state
 interface Position {
   x: number;
   y: number;
