@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`relative ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`relative max-w-[1920px] m-auto ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <CustomCursor />
         <Effect />

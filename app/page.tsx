@@ -6,6 +6,7 @@ export default function Home() {
     <>
     <SwiperComponent />
     <Experience />
+    {/* <Profile /> */}
     </>
   );
 }

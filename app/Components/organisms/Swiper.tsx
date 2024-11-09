@@ -44,7 +44,7 @@ const SwiperComponent: React.FC = () => {
 
   return (
     
-      <section className="mt-12 mb-24 w-[90%] m-auto ">
+      <section className="mt-12 mb-24 w-[90%] m-auto">
         <Swiper
           autoplay={{ delay: 2000 }}
           modules={[Pagination, Autoplay]}
@@ -61,8 +61,9 @@ const SwiperComponent: React.FC = () => {
           >
             <HoverWrapper>
 
-            <div className="relative border-black cursor-pointer min-w-[300px] h-[200px] rounded-xl border-2  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
+            <div className="relative outline-none border-black cursor-pointer min-w-[300px] h-[200px] rounded-xl border-2  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
               <Image
+              className="rounded-md"
                 src={FullStack}
                 alt="Slide 3"
                 layout="fill"
@@ -76,8 +77,9 @@ const SwiperComponent: React.FC = () => {
           >
             <HoverWrapper>
 
-            <div className="relative border-black cursor-pointer  min-w-[300px] h-[200px]  rounded-xl border-2   md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
-              <Image src={Survey} alt="Slide 2" layout="fill" objectFit="fit" />
+            <div className="relative outline-none border-black cursor-pointer  min-w-[300px] h-[200px]  rounded-xl border-2   md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
+              <Image
+              className="rounded-md" src={Survey} alt="Slide 2" layout="fill" objectFit="fit" />
             </div>
             </HoverWrapper>
           </SwiperSlide>
@@ -86,8 +88,9 @@ const SwiperComponent: React.FC = () => {
           >
             <HoverWrapper>
 
-            <div className="relative border-black cursor-pointer min-w-[300px] h-[200px] rounded-xl border-2  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
-              <Image src={Louie} alt="Slide 1" layout="fill" objectFit="fit" />
+            <div className="relative outline-none border-black cursor-pointer min-w-[300px] h-[200px] rounded-xl border-2  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
+              <Image
+              className="rounded-md" src={Louie} alt="Slide 1" layout="fill" objectFit="fit" />
             </div>
             </HoverWrapper>
           </SwiperSlide>
@@ -99,8 +102,9 @@ const SwiperComponent: React.FC = () => {
           >
             <HoverWrapper>
 
-            <div className="relative border-black cursor-pointer min-w-[300px] h-[200px] rounded-xl border-2  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
+            <div className="relative outline-none border-black cursor-pointer min-w-[300px] h-[200px] rounded-xl border-2  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
               <Image
+              className="rounded-md"
                 src={Webdoors}
                 alt="Slide 4"
                 layout="fill"
