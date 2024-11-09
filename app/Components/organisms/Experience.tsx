@@ -17,7 +17,7 @@ export default function Experience() {
       <div className="group cursor-pointer relative">
         <HoverWrapper>
 
-        <h1 className="md:text-[18px] hover:border-white  hover:text-white z-50  lg:hover:border-b lg:w-0 lg:hover:w-[6.2%] lg:border-black lg:duration-700 text-[18px] lg:text-[20px] xl:text-[]22px absolute">
+        <h1 className="md:text-[18px] lg:hover:border-white  lg:hover:text-white z-50  lg:hover:border-b lg:w-0 lg:hover:w-[6.2%] lg:border-black lg:duration-700 text-[18px] lg:text-[20px] xl:text-[]22px absolute">
           EXPERIENCE
         </h1>
         </HoverWrapper>
@@ -37,7 +37,7 @@ export default function Experience() {
           <HoverWrapper>
             <li
               onClick={() => handleClick("https://www.reeducate.space/")}
-              className="lg:hover:border-b lg:w-[0%] lg:hover:border-white  lg:whitespace-nowrap hover:text-white z-50 relative lg:hover:w-full lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
+              className="lg:hover:border-b lg:w-[0%] lg:hover:border-white  lg:whitespace-nowrap lg:hover:text-white z-50 relative lg:hover:w-full lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
               >
               Re:educate 3 Month Still Work
             </li>
@@ -57,7 +57,7 @@ export default function Experience() {
           <HoverWrapper>
             <li
               onClick={() => handleClick("https://webdoors.ge/ka/")}
-              className="lg:hover:border-b lg:hover:border-white lg:w-[0%] lg:whitespace-nowrap lg:hover:w-full  z-50 relative hover:text-white lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
+              className="lg:hover:border-b lg:hover:border-white lg:w-[0%] lg:whitespace-nowrap lg:hover:w-full  z-50 relative lg:hover:text-white lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
 
               >
               Webdoors 6 Month
@@ -73,7 +73,7 @@ export default function Experience() {
           <HoverWrapper>
             <li
               onClick={() => handleClick("https://gtu.ge/en/")}
-              className="lg:hover:border-b lg:w-[0%] lg:hover:border-white  lg:whitespace-nowrap hover:text-white  relative z-50 lg:hover:w-full lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
+              className="lg:hover:border-b lg:w-[0%] lg:hover:border-white  lg:whitespace-nowrap lg:hover:text-white  relative z-50 lg:hover:w-full lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
               >
               Technical Univeristy 2022-2026
             </li>
