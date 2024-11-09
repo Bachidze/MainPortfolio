@@ -1,11 +1,9 @@
-// RootLayout.js
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./Components/organisms/Header";
 import Effect from "./Components/organisms/Effect";
 import CustomCursor from "./Components/organisms/CurstomCursor";
-import HoverWrapper from "./Components/organisms/HoverWrapper";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,9 +34,8 @@ export default function RootLayout({
         <CustomCursor />
         <Effect />
         <Header />
-        <HoverWrapper>
-          {children}
-        </HoverWrapper>
+
+        {children}
       </body>
     </html>
   );
