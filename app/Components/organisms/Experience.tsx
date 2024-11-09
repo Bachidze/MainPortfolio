@@ -17,7 +17,7 @@ export default function Experience() {
       <div className="group cursor-pointer relative">
         <HoverWrapper>
 
-        <h1 className="md:text-[18px] lg:hover:border-white  lg:hover:text-white z-50  lg:hover:border-b lg:w-0 lg:hover:w-[6.2%] lg:border-black lg:duration-700 text-[18px] lg:text-[20px] xl:text-[]22px absolute">
+        <h1 className="md:text-[18px] lg:hover:border-white  lg:hover:text-white z-50  lg:hover:border-b lg:w-0 lg:hover:w-[8%] lg:border-black lg:duration-700 text-[18px] lg:text-[20px] xl:text-[]22px absolute">
           EXPERIENCE
         </h1>
         </HoverWrapper>

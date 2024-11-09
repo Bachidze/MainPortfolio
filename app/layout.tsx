@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./Components/organisms/Header";
 import Effect from "./Components/organisms/Effect";
 import CustomCursor from "./Components/organisms/CurstomCursor";
+import Footer from "./Components/organisms/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Header />
 
         {children}
+        <Footer />
       </body>
     </html>
   );
