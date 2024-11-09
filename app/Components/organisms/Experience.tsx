@@ -68,7 +68,7 @@ export default function Experience() {
           </HoverWrapper>
           <HoverWrapper>
             <li
-              onClick={() => handleClick("https://webdoors.ge/ka/")}
+              onClick={() => handleClick("https://gtu.ge/en/")}
               className="lg:hover:border-b lg:w-[0%] lg:whitespace-nowrap relative z-40 lg:hover:w-full lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[]22px"
               >
               Technical Univeristy 2022-2026
