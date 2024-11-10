@@ -5,7 +5,7 @@ import BachiImg from "../../../assets/mainGithubPhoto.jpg"
 export default function About() {
   return (
     <>
-    <section className='hidden lg:flex m-auto w-[90%] text-white relative '>
+    <section className='flex m-auto w-[90%] text-white relative '>
         <div className='flex items-center justify-center'>
         <div>
           <HoverWrapper>
