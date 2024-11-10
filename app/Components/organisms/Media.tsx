@@ -12,7 +12,7 @@ export default function Media() {
   };
   return (
     <>
-      <section className="w-[90%] m-auto relative bottom-8 lg:bottom-20  xl:bottom-36 2xl:bottom-44">
+      <section className="w-[90%] m-auto relative ">
         <div className="group cursor-pointer relative">
           <HoverWrapper>
             <h1 className="md:text-[18px] lg:hover:border-white  lg:hover:text-white z-50  lg:hover:border-b lg:w-0 lg:hover:w-[4.4%] lg:border-black lg:duration-700 text-[18px] lg:text-[20px] xl:text-[22px] absolute">

@@ -13,11 +13,11 @@ export default function Experience() {
   return (
     <>
     
-    <section className="w-[90%] m-auto relative bottom-16">
+    <section className="w-[90%] m-auto relative ">
       <div className="group cursor-pointer relative">
         <HoverWrapper>
 
-        <h1 className="md:text-[18px] lg:hover:border-white  lg:hover:text-white z-50  lg:hover:border-b lg:w-0 lg:hover:w-[8%] lg:border-black lg:duration-700 text-[18px] lg:text-[20px] xl:text-[]22px absolute">
+        <h1 className="md:text-[18px] lg:hover:border-white  lg:hover:text-white z-50  lg:hover:border-b lg:w-0 lg:hover:w-[8%] lg:border-black lg:duration-700 text-[18px] lg:text-[20px] xl:text-[22px] absolute">
           EXPERIENCE
         </h1>
         </HoverWrapper>
@@ -81,7 +81,7 @@ export default function Experience() {
         </div>
       </nav>
     </section>
-    <section className='hidden lg:block m-auto w-[90%] text-white relative bottom-20 xl:bottom-28'>
+    <section className='hidden lg:block m-auto w-[90%] text-white relative '>
         <div className='flex items-center justify-center'>
         <div>
           <HoverWrapper>
