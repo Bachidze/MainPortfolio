@@ -81,7 +81,7 @@ export default function Experience() {
         </div>
       </nav>
     </section>
-    <section className='hidden lg:block m-auto w-[90%] text-white relative '>
+    <section className='hidden lg:flex m-auto w-[90%] text-white relative '>
         <div className='flex items-center justify-center'>
         <div>
           <HoverWrapper>
