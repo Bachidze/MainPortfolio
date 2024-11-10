@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from "framer-motion"
 import HoverWrapper from './HoverWrapper'
+import DoubleArrow from '@/assets/DoubleArrow';
 export default function Footer() {
     const currentYear = new Date().getFullYear();
   return (
@@ -38,18 +39,9 @@ export default function Footer() {
         </div>
         <HoverWrapper>
 
-            <motion.div
-              className="min-w-[50px] min-h-[50px] border rounded-full border-black bg-black relative   md:min-w-[60px] md:min-h-[60px] lg:min-w-[75px] lg:min-h-[75px]"
-              animate={{ rotate: 360 }}
-              transition={{
-                  duration: 4,
-                  ease: "linear",
-                  repeat: Infinity,
-                }}
-                >
-              <div className="border absolute w-[65px] rotate-[45deg] top-[22px] -left-2 border-white md:w-[70px] md:-left-2 md:top-[26px] lg:w-[75px] lg:-left-0 lg:top-[35px]"></div>
-              <div className="border absolute w-[65px] -rotate-[45deg] top-[22px] -left-2 border-white md:w-[70px] md:-left-1 md:top-[26px] lg:w-[75px] lg:-left-[1px] lg:top-[36px]"></div>
-            </motion.div>
+        <DoubleArrow 
+          hoverColor="#fff"
+          />
                 </HoverWrapper>
       </section>
     </footer>
