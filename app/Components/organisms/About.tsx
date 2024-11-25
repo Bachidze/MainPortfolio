@@ -5,7 +5,7 @@ import BachiImg from "../../../assets/mainGithubPhoto.jpg"
 export default function About() {
   return (
     <>
-    <section className='flex m-auto w-[90%] text-white relative '>
+    <section className='hidden xl:flex m-auto w-[90%] text-white relative xl:-mb-16 xxl:-mb-24 3xl:-mb-36'>
         <div className='flex items-center justify-center'>
         <div>
           <HoverWrapper>
@@ -17,7 +17,6 @@ export default function About() {
         </div>
         <div>
           <HoverWrapper>
-
             <Image className='rounded-full cursor-pointer xl:w-[1100px]' src={BachiImg} alt='bachisImg' width={800} height={800} />
           </HoverWrapper>
         </div>

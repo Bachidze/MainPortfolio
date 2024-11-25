@@ -13,7 +13,7 @@ export default function Experience() {
   return (
     <>
     
-    <section className="w-[90%] m-auto relative ">
+    <section className="w-[90%] m-auto relative xl:-mb-14 xxl:-mb-20 3xl:-mb-36 ">
       <div className="group cursor-pointer relative">
         <HoverWrapper>
 
@@ -37,7 +37,7 @@ export default function Experience() {
           <HoverWrapper>
             <li
               onClick={() => handleClick("https://www.reeducate.space/")}
-              className="lg:hover:border-b lg:w-[0%] lg:hover:border-white  lg:whitespace-nowrap lg:hover:text-white z-50 relative lg:hover:w-full lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
+              className="lg:hover:border-b lg:w-[0%] text-[15px]  lg:hover:border-white  lg:whitespace-nowrap lg:hover:text-white z-50 relative lg:hover:w-full lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
               >
               Re:educate 3 Month Still Work
             </li>
@@ -57,7 +57,7 @@ export default function Experience() {
           <HoverWrapper>
             <li
               onClick={() => handleClick("https://webdoors.ge/ka/")}
-              className="lg:hover:border-b lg:hover:border-white lg:w-[0%] lg:whitespace-nowrap lg:hover:w-full  z-50 relative lg:hover:text-white lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
+              className="lg:hover:border-b text-[15px]  lg:hover:border-white lg:w-[0%] lg:whitespace-nowrap lg:hover:w-full  z-50 relative lg:hover:text-white lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
 
               >
               Webdoors 6 Month
@@ -73,7 +73,7 @@ export default function Experience() {
           <HoverWrapper>
             <li
               onClick={() => handleClick("https://gtu.ge/en/")}
-              className="lg:hover:border-b lg:w-[0%] lg:hover:border-white  lg:whitespace-nowrap lg:hover:text-white  relative z-50 lg:hover:w-full lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
+              className="lg:hover:border-b  text-[15px] lg:w-[0%] lg:hover:border-white  lg:whitespace-nowrap lg:hover:text-white  relative z-50 lg:hover:w-full lg:border-black lg:duration-700 md:text-[18px] lg:text-[20px] xl:text-[22px]"
               >
               Technical Univeristy 2022-2026
             </li>
@@ -81,7 +81,6 @@ export default function Experience() {
         </div>
       </nav>
     </section>
-    <About />
 </>
   );
 }
