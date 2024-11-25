@@ -4,7 +4,6 @@ import Reeducate from "../../../assets/Reedu.ico";
 import WebdoorsIcon from "../../../assets/WebdoorsIcon.png";
 import Image from "next/image";
 import HoverWrapper from "./HoverWrapper";
-import About from "./About";
 
 export default function Experience() {
   const handleClick = (url: string) => {
