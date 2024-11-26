@@ -20,7 +20,7 @@ export default function Footer() {
           >
             <HoverWrapper>
 
-            <a href="/Resiume.pdf" download="Resume.pdf" className="absolute">
+            <a href="/Resume.pdf" download="Resume.pdf" className="absolute">
                     <h1 className="text-black md:text-[18px] lg:hover:text-white lg:relative lg:z-50 lg:duration-1000 lg:ease-in-out lg:transition-all">
                       Download CV
                     </h1>
