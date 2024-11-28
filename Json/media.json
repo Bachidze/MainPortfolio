@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Linkedin",
+      "image": "/assets/LinkedinPort.png",
+      "url": "https://www.linkedin.com/in/giorgi-bachidze-11b68426b/",
+      "alt": "LinkedIn Icon"
+    },
+    {
+      "name": "Github",
+      "image": "/assets/GithubPort.png",
+      "url": "https://github.com/Bachidze",
+      "alt": "Github Icon"
+    },
+    {
+      "name": "Gmail",
+      "image": "/assets/GPort.webp",
+      "url": "mailto:bachidze90@gmail.com",
+      "alt": "Gmail Icon"
+    }
+  ]
+  

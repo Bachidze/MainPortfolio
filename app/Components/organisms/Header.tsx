@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import HoverWrapper from "./HoverWrapper";
-import DoubleArrow from "@/assets/DoubleArrow";
+import DoubleArrow from "@/public/assets/DoubleArrow";
 export default function Header() {
   const currentYear = new Date().getFullYear();
   return (

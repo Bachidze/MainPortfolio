@@ -1,0 +1,24 @@
+[
+    {
+      "name": "Re:educate",
+      "image": "/assets/Reedu.png",
+      "url": "https://www.reeducate.space/",
+      "alt": "Reeducate Image",
+      "duration": "1 Year"
+    },
+    {
+      "name": "Webdoors",
+      "image": "/assets/WebdoorsIcon.png",
+      "url": "https://webdoors.ge/ka/",
+      "alt": "Webdoors Image",
+      "duration": "6 Month"
+    },
+    {
+      "name": "GTU",
+      "image": "/assets/GTUSTU.jpg",
+      "url": "https://gtu.ge/en/",
+      "alt": "GTU Image",
+      "duration": "2022-2026"
+    }
+  ]
+  

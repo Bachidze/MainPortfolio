@@ -1,0 +1,28 @@
+[
+    {
+        "url": "https://final-frontside.vercel.app/",
+        "image": "/assets/FullStack.png",  
+        "alt": "Full Stack Slide"
+      },
+    {
+      "url": "https://survey.reeducate.space/",
+      "image": "/assets/Survey.png",
+      "alt": "Survey Slide"
+    },
+    {
+      "url": "https://www.louie.meme/",
+      "image": "/assets/LouieThumbnail.png",
+      "alt": "Louie Meme Slide"
+    },
+    {
+      "url": "https://webdoors-three.vercel.app/",
+      "image": "/assets/Webdoors.png",
+      "alt": "Webdoors Slide"
+    },
+    {
+      "url": "https://gallery-slide-show.vercel.app/",
+      "image": "/assets/GalleriaSlideShow.jpg",
+      "alt": "Galleria Slide Show"
+    }
+  ]
+  

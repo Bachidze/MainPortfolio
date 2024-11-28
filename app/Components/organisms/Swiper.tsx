@@ -5,11 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import slideData from "../../../Json/slideData.json"
 import Image from "next/image";
-import Louie from "../../../assets/LouieThumbnail.png";
-import Survey from "../../../assets/Survey.png";
-import FullStack from "../../../assets/fullStack.png";
-import Webdoors from "../../../assets/Webdoors.png";
 import HoverWrapper from "./HoverWrapper";
 
 const SwiperComponent: React.FC = () => {
@@ -41,96 +38,30 @@ const SwiperComponent: React.FC = () => {
   const handleSlideClick = (url: string) => {
     window.open(url, "_blank");
   };
-
   return (
     <section className="mt-12 mb-12 w-[90%] m-auto">
       <Swiper
-        autoplay={{ delay: 2000 }}
-        modules={[Pagination, Autoplay]}
-        loop
-        spaceBetween={50}
-        slidesPerView={slidesPerView}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+      autoplay={{delay:2000}}
+      modules={[Pagination,Autoplay]}
+      loop
+      spaceBetween={50}
+      slidesPerView={slidesPerView}
       >
-        <SwiperSlide
-          onClick={() =>
-            handleSlideClick("https://final-frontside.vercel.app/")
-          }
-        >
-          <HoverWrapper>
-            <div className="relative outline-none border-black cursor-pointer min-w-[300px] h-[200px] rounded-xl border-2  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
-              <Image
-                className="rounded-md"
-                src={FullStack}
-                alt="Slide 3"
-                layout="fill"
-                objectFit="fit"
-              />
-            </div>
-          </HoverWrapper>
-        </SwiperSlide>
-        <SwiperSlide
-          onClick={() => handleSlideClick("https://survey.reeducate.space/")}
-        >
-          <HoverWrapper>
-            <div className="relative outline-none border-black cursor-pointer  min-w-[300px] h-[200px]  rounded-xl border-2   md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
-              <Image
-                className="rounded-md"
-                src={Survey}
-                alt="Slide 2"
-                layout="fill"
-                objectFit="fit"
-              />
-            </div>
-          </HoverWrapper>
-        </SwiperSlide>
-        <SwiperSlide
-          onClick={() => handleSlideClick("https://www.louie.meme/")}
-        >
-          <HoverWrapper>
-            <div className="relative outline-none border-black cursor-pointer min-w-[300px] h-[200px] rounded-xl border-2  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
-              <Image
-                className="rounded-md"
-                src={Louie}
-                alt="Slide 1"
-                layout="fill"
-                objectFit="fit"
-              />
-            </div>
-          </HoverWrapper>
-        </SwiperSlide>
-
-        <SwiperSlide
-          onClick={() => handleSlideClick("https://webdoors-three.vercel.app/")}
-        >
-          <HoverWrapper>
-            <div className="relative outline-none border-black cursor-pointer min-w-[300px] h-[200px] rounded-xl border-2  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
-              <Image
-                className="rounded-md"
-                src={Webdoors}
-                alt="Slide 4"
-                layout="fill"
-                objectFit="fit"
-              />
-            </div>
-          </HoverWrapper>
-        </SwiperSlide>
-        <SwiperSlide
-          onClick={() => handleSlideClick("https://webdoors-three.vercel.app/")}
-        >
-          <HoverWrapper>
-            <div className="relative outline-none border-black cursor-pointer min-w-[300px] h-[200px] rounded-xl border-2  md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
-              <Image
-                className="rounded-md"
-                src={Webdoors}
-                alt="Slide 4"
-                layout="fill"
-                objectFit="fit"
-              />
-            </div>
-          </HoverWrapper>
-        </SwiperSlide>
+       {slideData.map(({ url, image, alt }, index) => (
+          <SwiperSlide key={index} onClick={() => handleSlideClick(url)}>
+            <HoverWrapper>
+              <div className="relative outline-none border-black cursor-pointer min-w-[300px] h-[200px] rounded-xl border-2 md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
+                <Image
+                  className="rounded-md"
+                  src={image}
+                  alt={alt}
+                  layout="fill"
+                  objectFit="fit"
+                />
+              </div>
+            </HoverWrapper>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );
