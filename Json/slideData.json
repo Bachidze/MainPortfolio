@@ -1,7 +1,7 @@
 [
     {
         "url": "https://final-frontside.vercel.app/",
-        "image": "/assets/FullStack.png",  
+        "image": "/assets/fullStack.png",  
         "alt": "Full Stack Slide"
       },
     {
@@ -21,7 +21,7 @@
     },
     {
       "url": "https://gallery-slide-show.vercel.app/",
-      "image": "/assets/GalleriaSlideShow.jpg",
+      "image": "/assets/galleriaSlideShow.jpg",
       "alt": "Galleria Slide Show"
     }
   ]
