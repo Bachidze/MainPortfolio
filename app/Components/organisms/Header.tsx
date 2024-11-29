@@ -6,7 +6,7 @@ import DoubleArrow from "@/public/assets/DoubleArrow";
 export default function Header() {
   const currentYear = new Date().getFullYear();
   return (
-    <header className="w-[90%] m-auto text-white pt-4  md:pt-6 lg:pt-8">
+    <header className="w-[90%] m-auto text-white pt-6  md:pt-8 lg:pt-10">
       <section className="cursor-pointer flex  items-center">
         <HoverWrapper>
           <DoubleArrow 

@@ -2,7 +2,7 @@
 import React from "react";
 import HoverWrapper from "./HoverWrapper";
 import Image from "next/image";
-import aboutData from "../../../Json/about.json"; // Adjust the path if necessary
+import aboutData from "../../../Json/about.json";
 
 export default function About() {
   return (

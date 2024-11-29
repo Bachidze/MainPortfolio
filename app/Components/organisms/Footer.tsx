@@ -7,7 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <>
-      <footer className="w-[90%] m-auto text-white relative mb-10 ">
+      <footer className="w-[90%] m-auto text-white relative mb-14 ">
         <section className="cursor-pointer flex  items-center gap-6">
           <div className="w-full flex relative bg-white  ">
             <motion.div
