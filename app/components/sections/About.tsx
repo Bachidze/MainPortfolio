@@ -9,11 +9,11 @@ const data = aboutData as AboutData;
 
 export default function About() {
   return (
-    <section className="hidden xl:flex m-auto w-[90%] text-white relative xl:-mb-16 xxl:-mb-24 3xl:-mb-36">
+    <section className="hidden xl:flex m-auto w-[90%] relative xl:-mb-16 xxl:-mb-24 3xl:-mb-36">
       <div className="flex items-center justify-center">
         <div>
           <HoverWrapper>
-            <p className="text-black w-[95%] lg:text-[22px] tracking-wider relative z-50 hover:text-white duration-[1500ms] leading-10 xl:text-[24px] 2xl:text-[26px]">
+            <p className="w-[95%] lg:text-[22px] tracking-wider relative z-50 hover:text-[#1B263B] duration-[1500ms] leading-10 xl:text-[24px] 2xl:text-[26px]">
               {data.bio}
             </p>
           </HoverWrapper>

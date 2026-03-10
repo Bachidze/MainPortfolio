@@ -108,10 +108,10 @@ export default function SmokeEffect() {
         ctx.globalAlpha = p.alpha;
 
         const gradient = ctx.createRadialGradient(0, 0, 0, 0, 0, p.size);
-        gradient.addColorStop(0, "rgba(210, 210, 215, 0.9)");
-        gradient.addColorStop(0.3, "rgba(195, 195, 200, 0.5)");
-        gradient.addColorStop(0.6, "rgba(180, 180, 185, 0.2)");
-        gradient.addColorStop(1, "rgba(160, 160, 165, 0)");
+        gradient.addColorStop(0, "rgba(255, 215, 0, 0.1)");
+        gradient.addColorStop(0.3, "rgba(218, 165, 32, 0.05)");
+        gradient.addColorStop(0.6, "rgba(184, 134, 11, 0.02)");
+        gradient.addColorStop(1, "rgba(184, 134, 11, 0)");
 
         ctx.fillStyle = gradient;
         ctx.beginPath();

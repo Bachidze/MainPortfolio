@@ -5,15 +5,94 @@
 
 
 
-*{
+* {
   font-family: Poppins;
 }
 
+body {
+  background: #1B263B;
+  color: #ffd700;
+  min-height: 100vh;
+}
+
 .hover-area {
-    transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.hover-area:hover {
+  background-color: #ffd700;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.glow-border-gold {
+  position: relative;
+  overflow: hidden;
+  background:
+    conic-gradient(
+      from var(--border-angle),
+      transparent 25%,
+      #92600a 38%,
+      #b8860b 43%,
+      #daa520 48%,
+      #ffd700 50%,
+      #daa520 52%,
+      #b8860b 57%,
+      #92600a 62%,
+      transparent 75%
+    );
+  border-radius: 0.75rem;
+  animation: border-rotate 4s linear infinite;
+}
+
+.glow-border-dark {
+  position: relative;
+  overflow: hidden;
+  background:
+    conic-gradient(
+      from var(--border-angle),
+      transparent 25%,
+      #5c4a00 38%,
+      #7a6400 43%,
+      #9a8200 48%,
+      #b8960a 50%,
+      #9a8200 52%,
+      #7a6400 57%,
+      #5c4a00 62%,
+      transparent 75%
+    );
+  border-radius: 0.75rem;
+  animation: border-rotate 4s linear infinite;
+}
+
+.glow-border-circle {
+  position: relative;
+  overflow: hidden;
+  background:
+    conic-gradient(
+      from var(--border-angle),
+      transparent 25%,
+      #92600a 38%,
+      #b8860b 43%,
+      #daa520 48%,
+      #ffd700 50%,
+      #daa520 52%,
+      #b8860b 57%,
+      #92600a 62%,
+      transparent 75%
+    );
+  border-radius: 50%;
+  animation: border-rotate 4s linear infinite;
+  padding: 4px;
+}
+
+@keyframes border-rotate {
+  to {
+    --border-angle: 360deg;
   }
-  
-  .hover-area:hover {
-    background-color: black;
-  }
+}
   

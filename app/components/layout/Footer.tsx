@@ -14,16 +14,16 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-[90%] m-auto text-white relative mb-14">
+    <footer className="w-[90%] m-auto relative mb-14">
       <div className="cursor-pointer flex items-center gap-6">
-        <div className="w-full flex relative bg-white">
+        <div className="w-full flex relative bg-[#ffd700]">
           <motion.div
             {...TIMELINE_ANIMATION}
-            className="border border-black w-[35%] absolute left-0"
+            className="border border-[#ffd700] w-[35%] absolute left-0"
           >
             <HoverWrapper>
               <a href="/Resume.pdf" download="Resume.pdf" className="absolute">
-                <span className="text-black md:text-[18px] lg:hover:text-white lg:relative lg:z-50 lg:duration-1000 lg:ease-in-out lg:transition-all">
+                <span className="text-[#ffd700] md:text-[18px] lg:hover:text-[#1B263B] lg:relative lg:z-50 lg:duration-1000 lg:ease-in-out lg:transition-all">
                   Download CV
                 </span>
               </a>
@@ -31,15 +31,15 @@ export default function Footer() {
           </motion.div>
           <motion.div
             {...TIMELINE_ANIMATION}
-            className="border border-black w-[35%] ml-5 absolute right-0"
+            className="border border-[#ffd700] w-[35%] ml-5 absolute right-0"
           >
             <div className="absolute right-0">
-              <span className="text-black md:text-[18px]">{currentYear}</span>
+              <span className="text-[#ffd700] md:text-[18px]">{currentYear}</span>
             </div>
           </motion.div>
         </div>
         <HoverWrapper>
-          <DoubleArrow hoverColor="#fff" />
+          <DoubleArrow color="#ffd700" hoverColor="#fff" />
         </HoverWrapper>
       </div>
     </footer>

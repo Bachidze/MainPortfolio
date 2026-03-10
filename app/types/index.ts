@@ -24,6 +24,7 @@ export interface ProjectSlide {
   url: string;
   image: string;
   alt: string;
+  featured?: boolean;
 }
 
 export interface Particle {

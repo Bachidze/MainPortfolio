@@ -14,26 +14,26 @@ export default function Header() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <header className="w-[90%] m-auto text-white pt-6 md:pt-8 lg:pt-10">
+    <header className="w-[90%] m-auto pt-6 md:pt-8 lg:pt-10">
       <div className="cursor-pointer flex items-center">
         <HoverWrapper>
-          <DoubleArrow hoverColor="#fff" />
+          <DoubleArrow color="#ffd700" hoverColor="#fff" />
         </HoverWrapper>
-        <div className="w-full flex relative bg-white">
+        <div className="w-full flex relative bg-[#ffd700]">
           <motion.div
             {...TIMELINE_ANIMATION}
-            className="border border-black w-[35%] ml-7 absolute left-0"
+            className="border border-[#ffd700] w-[35%] ml-7 absolute left-0"
           >
             <div className="absolute">
-              <span className="text-black md:text-[18px]">2023</span>
+              <span className="text-[#ffd700] md:text-[18px]">2023</span>
             </div>
           </motion.div>
           <motion.div
             {...TIMELINE_ANIMATION}
-            className="border border-black w-[35%] ml-5 absolute right-0"
+            className="border border-[#ffd700] w-[35%] ml-5 absolute right-0"
           >
             <div className="absolute right-0">
-              <span className="text-black md:text-[18px]">{currentYear}</span>
+              <span className="text-[#ffd700] md:text-[18px]">{currentYear}</span>
             </div>
           </motion.div>
         </div>

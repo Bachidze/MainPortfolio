@@ -50,16 +50,18 @@ export default function ProjectSlider() {
         spaceBetween={50}
         slidesPerView={slidesPerView}
       >
-        {(slideData as ProjectSlide[]).map(({ url, image, alt }) => (
+        {(slideData as ProjectSlide[]).map(({ url, image, alt, featured }) => (
           <SwiperSlide key={url} onClick={() => handleSlideClick(url)}>
             <HoverWrapper>
-              <div className="relative outline-none border-black cursor-pointer min-w-[300px] h-[200px] rounded-xl border-2 md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] overflow-hidden">
-                <Image
-                  className="rounded-md object-cover"
-                  src={image}
-                  alt={alt}
-                  fill
-                />
+              <div className={`relative cursor-pointer min-w-[300px] h-[200px] rounded-xl md:min-w-[335px] xl:min-w-[430px] xl:h-[300px] p-[3px] ${featured ? "glow-border-gold" : "glow-border-dark"}`}>
+                <div className="relative w-full h-full rounded-xl overflow-hidden">
+                  <Image
+                    className="rounded-xl object-cover"
+                    src={image}
+                    alt={alt}
+                    fill
+                  />
+                </div>
               </div>
             </HoverWrapper>
           </SwiperSlide>

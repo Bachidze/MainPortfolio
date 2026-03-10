@@ -1,5 +1,11 @@
 [
     {
+      "url": "https://kolkhisea.vercel.app/en/about-project",
+      "image": "/assets/KolkhiSea.png",
+      "alt": "KolkhiSea - Luxury Black Sea Apartments",
+      "featured": true
+    },
+    {
         "url": "https://final-frontside.vercel.app/",
         "image": "/assets/fullStack.png",  
         "alt": "Full Stack Slide"
