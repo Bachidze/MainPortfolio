@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+"use client";
 
-interface DoubleArrowProps {
-  width?: number;
-  height?: number;
-  color?: string;
-  hoverColor?: string;
-}
+import { useState } from "react";
+import type { DoubleArrowProps } from "@/app/types";
 
 export default function DoubleArrow({
   width = 61,
@@ -31,7 +27,7 @@ export default function DoubleArrow({
         clipRule="evenodd"
         d="M31.3469 26.1224L15.6735 0L0 26.1224H31.3469ZM60.0816 5.87755L44.4082 32L28.7347 5.87755H60.0816Z"
         fill={isHovered ? hoverColor : color}
-        style={{ transition: ' 0.7s ease-in-out' }} 
+        style={{ transition: "0.7s ease-in-out" }}
       />
     </svg>
   );

@@ -1,10 +1,24 @@
 [
+  {
+    "name": "Scopic Software",
+    "image": "/assets/Scopic.png",
+    "url": "https://scopicsoftware.com/",
+    "alt": "Scopic Software Image",
+    "duration": "6 Month"
+  },
+    {
+      "name": "Identomat",
+      "image": "/assets/Identomat.png",
+      "url": "https://identomat.com/",
+      "alt": "Identomat Image",
+      "duration": "1 Year"
+    },
     {
       "name": "Re:educate",
       "image": "/assets/Reedu.png",
       "url": "https://www.reeducate.space/",
       "alt": "Reeducate Image",
-      "duration": "1 Year"
+      "duration": "1.5 Year"
     },
     {
       "name": "Webdoors",
@@ -21,4 +35,3 @@
       "duration": "2022-2026"
     }
   ]
-  

@@ -1,15 +1,15 @@
-import About from "./Components/organisms/About";
-import Experience from "./Components/organisms/Experience";
-import Media from "./Components/organisms/Media";
-import SwiperComponent from "./Components/organisms/Swiper";
+import About from "@/app/components/sections/About";
+import Experience from "@/app/components/sections/Experience";
+import Media from "@/app/components/sections/Media";
+import ProjectSlider from "@/app/components/sections/ProjectSlider";
 
 export default function Home() {
   return (
-    <>
-    <SwiperComponent />
-    <Experience />
-    <About />
-    <Media />
-    </>
+    <main>
+      <ProjectSlider />
+      <Experience />
+      <About />
+      <Media />
+    </main>
   );
 }
